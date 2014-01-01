@@ -28,6 +28,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from m7spr device
 $(call inherit-product, device/htc/m7spr/device.mk)
 
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m7wls BUILD_FINGERPRINT="htc/sprint_wwe/m7wls:4.3/JSS15J/251863.2:user/release-keys" PRIVATE_BUILD_DESC="3.04.651.2 CL251863 release-keys"
+
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_m7spr
 PRODUCT_DEVICE := m7spr
